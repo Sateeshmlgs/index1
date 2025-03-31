@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Output Methods</title>
+</head>
+<body>
+    <h1>JavaScript Output Methods</h1>
+    
+    <button onclick="displayConsole()">Console Log</button>
+    <button onclick="displayAlert()">Alert Box</button>
+    <button onclick="displayDocumentWrite()">Document Write</button>
+    <button onclick="displayInnerHTML()">Change HTML</button>
+
+    <p id="output">This text will change!</p>
+
+    <script>
+        // 1. Console.log() - Output in browser console
+        function displayConsole() {
+            console.log("This message is displayed in the console.");
+        }
+
+        // 2. Alert() - Displaying output in an alert box
+        function displayAlert() {
+            alert("This is an alert box!");
+        }
+
+        // 3. document.write() - Writing directly to the document
+        function displayDocumentWrite() {
+            document.write("<h2>This text replaces the entire document!</h2>");
+        }
+
+        // 4. innerHTML - Modifying existing HTML content
+        function displayInnerHTML() {
+            document.getElementById("output").innerHTML = "This text has been changed using JavaScript!";
+        }
+    </script>
+</body>
+</html>
